@@ -8,7 +8,6 @@ body{
 }
 
 nav{
-    position: sticky;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -90,8 +89,6 @@ nav a{
     margin-bottom: 2px;
 }
 img{
-    margin: 0px;
-    padding: 0px;
     max-width: 700px;
     width: 100%;
 }
@@ -188,6 +185,7 @@ header input[type='checkbox'], header label {
     display: none;
 }
 
+
     nav{
     position: sticky;
     display: flex;
@@ -220,10 +218,16 @@ header input[type='checkbox'], header label {
 }
 
 @media (max-width: 1140px) {
-    div{
-        text-align: center;
-        margin: 13px auto;
+
+    main{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #f4f4f4;
+        animation: fade_into_screen 4s;
+        margin: 20px;
     }
+
 
     .intro-to-MacBook{
         font-size: 1.5em;
@@ -241,9 +245,12 @@ header input[type='checkbox'], header label {
         font-size: 2.5em;
     }
 
+    .airpods{
+        font-size: 2em;
+    }
+
     .savings{
     font-size: 0.9em;
     letter-spacing: -0.7px;
   }
 }
-
