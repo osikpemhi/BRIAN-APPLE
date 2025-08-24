@@ -32,7 +32,7 @@ nav a{
     }
 }
 
-.iPhone{
+.iPhone, .macbook{
     /* width: 100%; */
     display: flex;
     align-items: center;
@@ -41,14 +41,14 @@ nav a{
     animation: fade_into_screen 4s;
 }
 
-.iPhone-header{
+.iPhone-header, .macbook-header{
     font-weight: 500;
     font-size: 3.5em;
     color: #1e1e1e;
     margin: 30px 0px 0px 0px;
 }
 
-.intro-to-iPhone-16{
+.intro-to-iPhone-16, .intro-to-MacBook{
     letter-spacing: 0px;
     font-weight: 400;
     margin-top: 0px;
@@ -62,7 +62,7 @@ nav a{
     border: 1px solid blue;
     font-size: 1em;
     border-radius: 50px;
-    padding: 15px 20px 15px 20px;
+    padding: 13px 20px;
     color: #0000ff;
 }
 
@@ -87,6 +87,7 @@ nav a{
     background-clip: text;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     font-size: 21px;
+    margin-bottom: 2px;
 }
 img{
     margin: 0px;
@@ -95,13 +96,52 @@ img{
     width: 100%;
 }
 
+.macbook{
+    margin-top: 10px;
+    background: linear-gradient(135deg ,#abd5ff ,#f4f4f4, #f4f4f4);
+}
+
+.macbook-img{
+    margin-top: 20px;
+    max-width: 480px;
+    width: 100%;
+}
+
 .college{
     margin-top: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #f4f4f4;
+    background-image: url(1000040433.png);
     animation: identifier 8s;
+}
+
+.macbook-btn-1, .macbook-btn-2{
+    background-color: #0000ff;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.macbook-persuade{
+    background: linear-gradient(94deg, #0090F7, #BA62FC, #F2416B, #F55600);
+    color: transparent;
+    background-clip: text;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.macbook-btn-2{
+    background-color: #f4f4f4;
+    color: #0000ff;
+    border: 1px solid #0000ff;
+    padding: 100px auto;
+    margin-left: 20px;
+}
+
+.macbook-btns{
+    display: flex;
+    flex-direction: row;
 }
 
 .buy, .savings, .airpods{
@@ -121,7 +161,6 @@ img{
 
 .savings{
     /* margin-top: 10px; */
-    text-align: center;
     letter-spacing: -1px;
     font-size: 1em;
 }
@@ -134,8 +173,8 @@ img{
     margin-top: 30px;
 }
 
-.shop:hover{
-    background-color: #0090F7;
+.shop, .macbook-btn-2:hover{
+    background-color: #0000ff;
     color: #ffffff;
 }
 
@@ -169,6 +208,8 @@ header input[type='checkbox'], header label {
     display: block;
     padding: 0.5em;
     align-self: center;
+
+    
 }
 }    
 
@@ -179,7 +220,9 @@ header input[type='checkbox'], header label {
 }
 
 @media (max-width: 1140px) {
-    
+    .intro-to-MacBook{
+        font-size: 1.5em;
+    }
     .buy, .savings, .airpods{
         margin-top: 40px;
         padding: 15px 15px 15px 15px;
@@ -197,5 +240,4 @@ header input[type='checkbox'], header label {
     font-size: 0.9em;
     letter-spacing: -0.7px;
   }
-
 }
