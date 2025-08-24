@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+nav a{
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+    font-size: 0.79em;
+}
+
+@keyframes fade_into_screen {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.iPhone{
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    animation: fade_into_screen 4s;
+}
+
+.iPhone-header{
+    font-weight: 500;
+    font-size: 3.5em;
+    color: #1e1e1e;
+    margin: 30px 0px 0px 0px;
+}
+
+.intro-to-iPhone-16{
+    letter-spacing: 0px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 1.79em;
+}
+
+.btn{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid blue;
+    font-size: 1em;
+    border-radius: 50px;
+    padding: 15px 20px 15px 20px;
+    color: #0000ff;
+}
+
+.iPhone-button2:hover{
+    background-color: #0000ff;
+    color: #ffffff;
+}
+
+.iPhone-button1:hover{
+    background-color: #3c3cff;
+}
+
+.iPhone-button1{
+    background-color: #0000ff;
+    color: #ffffff;
+}
+
+
+.iPhone-persuade{
+    background: linear-gradient(94deg, #0090F7, #BA62FC, #F2416B, #F55600);
+    color: transparent;
+    background-clip: text;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 21px;
+}
+img{
+    margin: 0px;
+    padding: 0px;
+    max-width: 700px;
+    width: 100%;
+}
+
+.college{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    animation: identifier 8s;
+}
+
+.buy, .savings, .airpods{
+    font-family: "Poppins" sans-serif;
+    margin-top: 40px;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    width: 100%;
+    max-width: 200px;
+    letter-spacing: -2px;
+    line-height: 40px;
+    background-color: #1111ff;
+    font-size: 2em;
+}
+
+.savings{
+    /* margin-top: 10px; */
+    letter-spacing: -1px;
+    font-size: 1em;
+}
+
+.airpods{
+    margin-top: 20px;
+}
+
+.shop{
+    margin-top: 30px;
+}
+
+.shop:hover{
+    background-color: #0090F7;
+    color: #ffffff;
+}
+
+    
+header input[type='checkbox'], header label {
+    display: none; 
+}
+
+@media (max-width: 576px) {
+    input[type='checkbox']:not(:checked) + nav{
+    display: none;
+}
+
+    nav{
+    position: sticky;
+    display: flex;
+    align-content: end;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 15px;
+}
+    nav a{
+        margin-bottom: 9px;
+        font-size: 0.9em;
+        width: 100%;
+    }
+
+    header label,input{
+    text-align: right;
+    display: block;
+    padding: 0.5em;
+    align-self: center;
+}
+}    
+
+@media (min-width: 576px) {
+    header input[type='checkbox'], header label {
+    display: none;
+}
+}
+
+@media (max-width: 1140px) {
+    
+    .buy, .savings, .airpods{
+        margin-top: 40px;
+        padding: 15px 15px 15px 15px;
+        border-radius: 20px;
+        font-weight: 7  00;
+        color: #ffffff;
+        width: 60%;
+        letter-spacing: -2px;
+        line-height: 40px;
+        background-color: #1111ff;
+        font-size: 2.5em;
+    }
+
+    .savings{
+    font-size: 0.9em;
+    letter-spacing: -0.7px;
+  }
+}
