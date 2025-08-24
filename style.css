@@ -158,6 +158,7 @@ img{
 
 .savings{
     /* margin-top: 10px; */
+    text-align: center;
     letter-spacing: -1px;
     font-size: 1em;
 }
@@ -244,3 +245,4 @@ header input[type='checkbox'], header label {
     letter-spacing: -0.7px;
   }
 }
+
