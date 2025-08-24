@@ -221,6 +221,7 @@ header input[type='checkbox'], header label {
 
 @media (max-width: 1140px) {
     div{
+        text-align: center;
         margin: 13px auto;
     }
 
@@ -245,3 +246,4 @@ header input[type='checkbox'], header label {
     letter-spacing: -0.7px;
   }
 }
+
