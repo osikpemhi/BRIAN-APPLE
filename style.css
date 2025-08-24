@@ -32,8 +32,7 @@ nav a{
 }
 
 .iPhone, .macbook{
-    max-width: 1400px;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -220,22 +219,12 @@ header input[type='checkbox'], header label {
 
 @media (max-width: 1140px) {
 
-    main{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        background-color: #f4f4f4;
-        animation: fade_into_screen 4s;
-        margin: 20px;
-    }
-
-
     .intro-to-MacBook{
         font-size: 1.5em;
     }
     .buy, .savings, .airpods{
         margin-top: 40px;
-        padding: 15px 15px 15px 15px;
+        padding: 15px;
         border-radius: 20px;
         font-weight: 7  00;
         color: #ffffff;
@@ -255,4 +244,3 @@ header input[type='checkbox'], header label {
     letter-spacing: -0.7px;
   }
 }
-
