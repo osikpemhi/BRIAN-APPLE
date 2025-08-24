@@ -220,6 +220,10 @@ header input[type='checkbox'], header label {
 }
 
 @media (max-width: 1140px) {
+    div{
+        margin: 13px auto;
+    }
+
     .intro-to-MacBook{
         font-size: 1.5em;
     }
